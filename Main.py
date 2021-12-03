@@ -74,7 +74,8 @@ if(passwordInput==password and usernameInput==username):
     print("================================================\n")
     print("Daftar layanan yang akan digunakan\n"+
         "1. Daftar & Jadwal Doktor\n"+
-        "2. Booking jadwal praktik\n\n")
+        "2. Booking jadwal praktik\n"+
+        "3. Riwayat pengobatan\n\n")
     print("Silahkan pilih opsi: ")
     choice=input()
 
@@ -90,7 +91,11 @@ if(passwordInput==password and usernameInput==username):
             print(jadwal1_table)
         elif (choice =="2"):
             print(jadwal2_table)
-    else:
+    elif(choice == "2"):
         print("Mohon maaf, opsi yang anda pilih masih dalam tahap pengembangan")
+    elif(choice == "3"):
+        print("Anda masih belum pernah berobat di klinik ini")
+    else:
+        print("Input yang anda masukkan salah!")
 else :
     print("Mohon maaf username atau password anda salah, Silahkan coba kembali")

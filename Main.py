@@ -46,14 +46,16 @@ jadwal_2 ={
         'Selasa',
         'Rabu',
         'Kamis',
-        'Jumat'
+        'Jumat',
+        'ddd'
     ],
     'Jam':[
         '08.00 - 17.00 WIB',
         '08.00 - 17.00 WIB',
         '08.00 - 17.00 WIB',
         '08.00 - 17.00 WIB',
-        '08.00 - 11.00 WIB'
+        '08.00 - 11.00 WIB',
+        'ddd'
     ],
 }
 
@@ -71,4 +73,19 @@ print("Daftar layanan yang akan digunakan\n"+
     "2. Booking jadwal praktik\n\n")
 print("Silahkan pilih opsi: ")
 choice=input()
+
+if(choice == "1"):
+    print("\n===List Doktor Klinik X===")
+    print(doctor_table.head())
+    print("\nPilih untuk mengetahui jadwal praktik doktor")
+    choice = input()
+
+    if(choice == "0"):
+        print(jadwal0_table)
+    elif (choice =="1"):
+        print(jadwal1_table)
+    elif (choice =="2"):
+        print(jadwal2_table)
+else:
+    print("Mohon maaf, opsi yang anda pilih masih dalam tahap pengembangan")
 

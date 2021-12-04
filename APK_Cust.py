@@ -103,7 +103,6 @@ if(passwordInput==password and usernameInput==username):
         print(doctor_table.head())
         print("\nPilih untuk mengetahui jadwal praktik doktor")
         choice = input()
-        print("\n")
 
         if(choice == "0"):
             print(jadwal0_table)
@@ -112,6 +111,7 @@ if(passwordInput==password and usernameInput==username):
         elif (choice =="2"):
             print(jadwal2_table)
     elif(choice == "2"):
+        print("Daftar layanan yang tersedia :")
         print("\n1. Konsultasi\n"+
             "2. Pengobatan\n"+
             "3. Donor Darah\n"+

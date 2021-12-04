@@ -91,8 +91,8 @@ if(passwordInput==password and usernameInput==username):
     print("================================================\n")
     print("Daftar layanan yang akan digunakan\n"+
         "1. Daftar & Jadwal Doktor\n"+
-        "2. Reservasi Doker\n"+
-        "3. Riwayat pengobatan\n\n")
+        "2. Pelayanan\n"+
+        "3. Reservasi Doktor\n\n")
     print("Silahkan pilih opsi: ")
     choice=input()
 
@@ -109,7 +109,12 @@ if(passwordInput==password and usernameInput==username):
         elif (choice =="2"):
             print(jadwal2_table)
     elif(choice == "2"):
-        print("Mohon maaf, opsi yang anda pilih masih dalam tahap pengembangan")
+        print("\n1. Konsultasi\n"+
+            "2. Pengobatan\n"+
+            "3. Donor Darah\n"+
+            "4. Perawatan Gigi\n"+
+            "5. Medical Check Up\n"+
+            "6. Kehamilan\n")
     elif(choice == "3"):
         print("Anda masih belum pernah berobat di klinik ini")
     else:

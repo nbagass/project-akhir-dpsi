@@ -36,8 +36,21 @@ penyimpanan ={
     ]
 }
 
+janji={
+    'Nama Doktor':[
+        'Dr. Amelia Putri'
+    ],
+    'Nama Pasien':[
+        'Xiao Ling'
+    ],
+    'Tanggal' :[
+        '14/02/2021'
+    ]
+}
+
 pasien_table = pd.DataFrame(pasien)
 penyimpanan_table = pd.DataFrame(penyimpanan)
+janji_table = pd.DataFrame(janji)
 
 
 username ='proto'
@@ -65,6 +78,8 @@ if(passwordInput==password and usernameInput==username):
         print(pasien_table)
     elif(choice == "2"):
         print(penyimpanan_table)
+    elif(choice == "3"):
+        print(janji_table)
     else:
         print("Input yang anda masukkan salah")
 else:

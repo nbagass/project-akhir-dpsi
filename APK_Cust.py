@@ -116,7 +116,14 @@ if(passwordInput==password and usernameInput==username):
             "5. Medical Check Up\n"+
             "6. Kehamilan\n")
     elif(choice == "3"):
-        print("Anda masih belum pernah berobat di klinik ini")
+        nama =input( "Nama lengkap :\n" )
+        email =input( "Email :\n" )
+        noTelp =input( "No telp :\n" )
+        alamat =input( "Alamat :\n" )
+        tglRes =input( "Tanggal Reservasi :\n" )
+        dokter =input( "Pilih Dokter :\n" )
+        pesam =input( "Pesan (opsional) :\n" )
+        
     else:
         print("Input yang anda masukkan salah!")
 else :

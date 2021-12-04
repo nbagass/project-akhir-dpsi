@@ -61,6 +61,7 @@ obat ={
     ]
 }
 
+
 pasien_table = pd.DataFrame(pasien)
 penyimpanan_table = pd.DataFrame(penyimpanan)
 janji_table = pd.DataFrame(janji)
@@ -96,6 +97,12 @@ if(passwordInput==password and usernameInput==username):
         print(janji_table)
     elif(choice == "4"):
         print(obat_table)
+    elif(choice == "5"):
+        print("Username             : "+usernameInput+
+                "\nNama                 : Anonymous"+
+                "\nTempat Tanggal Lahir : Mars,13/21/4323"+
+                "\nJenis Kelamin        : Laki-Laki"+
+                "\nAlamat               : Jl apalah, Bumi")
     else:
         print("Input yang anda masukkan salah")
 else:

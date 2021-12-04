@@ -64,8 +64,11 @@ jadwal2_table = pd.DataFrame(jadwal_2)
 
 username ='proto'
 password = 'password'
+
+print("="*20)
 usernameInput = input("Username :")
 passwordInput = input("Password :")
+print("="*20)
 
 if(passwordInput==password and usernameInput==username):
 

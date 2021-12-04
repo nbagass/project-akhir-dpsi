@@ -1,16 +1,6 @@
 from numpy import left_shift
 import pandas as pd
 
-account ={
-    'USERNAME':[
-        'staff',
-        'proto'
-    ],
-    'PASSWORD':[
-        'password',
-        'password'
-    ]
-}
 
 doctor ={
     'NAMA' :[

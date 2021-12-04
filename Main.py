@@ -1,6 +1,17 @@
 from numpy import left_shift
 import pandas as pd
 
+account ={
+    'USERNAME':[
+        'staff',
+        'proto'
+    ],
+    'PASSWORD':[
+        'password',
+        'password'
+    ]
+}
+
 doctor ={
     'NAMA' :[
         'Dr.Faiz Ramadhan',
@@ -61,6 +72,9 @@ doctor_table = pd.DataFrame(doctor)
 jadwal0_table = pd.DataFrame(jadwal_0)
 jadwal1_table = pd.DataFrame(jadwal_1)
 jadwal2_table = pd.DataFrame(jadwal_2)
+account_table = pd.DataFrame(account)
+
+
 
 username ='proto'
 password = 'password'
@@ -77,7 +91,7 @@ if(passwordInput==password and usernameInput==username):
     print("================================================\n")
     print("Daftar layanan yang akan digunakan\n"+
         "1. Daftar & Jadwal Doktor\n"+
-        "2. Booking jadwal praktik\n"+
+        "2. Reservasi Doker\n"+
         "3. Riwayat pengobatan\n\n")
     print("Silahkan pilih opsi: ")
     choice=input()

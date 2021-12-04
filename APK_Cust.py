@@ -92,15 +92,18 @@ if(passwordInput==password and usernameInput==username):
     print("Daftar layanan yang akan digunakan\n"+
         "1. Daftar & Jadwal Doktor\n"+
         "2. Pelayanan\n"+
-        "3. Reservasi Doktor\n\n")
+        "3. Reservasi Doktor\n"+
+        "4. Kontak\n\n")
     print("Silahkan pilih opsi: ")
     choice=input()
+    print("\n")
 
     if(choice == "1"):
         print("\n===List Doktor Klinik X===")
         print(doctor_table.head())
         print("\nPilih untuk mengetahui jadwal praktik doktor")
         choice = input()
+        print("\n")
 
         if(choice == "0"):
             print(jadwal0_table)
@@ -123,7 +126,11 @@ if(passwordInput==password and usernameInput==username):
         tglRes =input( "Tanggal Reservasi :\n" )
         dokter =input( "Pilih Dokter :\n" )
         pesam =input( "Pesan (opsional) :\n" )
-        
+    elif(choice == "4"):
+        nama =input( "Nama lengkap :\n" )
+        noTelp =input( "No telp :\n" )
+        subjek = input("Subjek :\n")
+        pesan = input ("Pesan :\n")
     else:
         print("Input yang anda masukkan salah!")
 else :
